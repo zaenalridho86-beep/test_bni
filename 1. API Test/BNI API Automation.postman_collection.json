@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "e4076d70-056d-4ccf-a6f2-ba7fc29630d2",
+		"name": "BNI API Automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43482883",
+		"_collection_link": "https://ridho-9620136.postman.co/workspace/ridho's-Workspace~2bb3492b-8223-43e8-8a44-93bf273b66a5/collection/43482883-e4076d70-056d-4ccf-a6f2-ba7fc29630d2?action=share&source=collection_link&creator=43482883"
+	},
+	"item": [
+		{
+			"name": "Menampilkan User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/public/v2/users/8222962",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8222962"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ridhozz\",\r\n    \"email\": \"ridhozzmm@test.com\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/public/v2/users",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ubah Data User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ridho ZZ\",\r\n    \"email\": \"alabum@test.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/public/v2/users/8222792",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8222792"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hapus User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/public/v2/users/8176555",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8176555"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
