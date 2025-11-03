@@ -1,0 +1,19 @@
+{
+  "name": "wdio-facebook-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "wdio run wdio.conf.js"
+  },
+  "devDependencies": {
+    "@wdio/appium-service": "^8.0.0",
+    "@wdio/cli": "^8.46.0",
+    "@wdio/local-runner": "^8.0.0",
+    "@wdio/mocha-framework": "^8.0.0",
+    "@wdio/spec-reporter": "^8.0.0",
+    "appium": "^3.1.0",
+    "appium-uiautomator2-driver": "^6.1.0",
+    "chai": "^4.3.0",
+    "webdriverio": "^8.0.0"
+  }
+}
